@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LearnFlow</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="#">My Learning</a>
+            <a href="#">Community</a>
+            <a href="#">About Us</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+            </div>
+            <div class="icons">
+                <i class="fas fa-bell"></i>
+            </div>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/large_2x/user-icon-on-transparent-background-free-png.png" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero-section">
+            <h1>Welcome Back, Learner!</h1>
+            <p>Continue your journey or explore new horizons.</p>
+            <a href="courses.html" class="button">Explore New Courses</a>
+        </section>
+
+        <section class="continue-learning">
+            <h2 class="section-title">Continue Learning</h2>
+            <div class="course-list">
+                <div class="course-card">
+                    <img src="https://vision-inst.com/wp-content/uploads/2022/10/Teachable-Thumbnails-1.png" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Complete Web Development Bootcamp</h3>
+                        <p class="instructor">Instructor: Jane Doe</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 75%;"></div>
+                        </div>
+                        <p class="progress-text">75% Completed</p>
+                        <a href="course-detail.html" class="btn">Continue</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://tse3.mm.bing.net/th/id/OIP.pbvlnZGKH4N_xKSafHvJPAHaFj?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Data Science for Beginners</h3>
+                        <p class="instructor">Instructor: John Smith</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 40%;"></div>
+                        </div>
+                        <p class="progress-text">40% Completed</p>
+                        <a href="course-detail.html" class="btn">Continue</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Z3NoAyV4LsMPEBTJUIzPxAHaEH?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Python for Absolute Beginners</h3>
+                        <p class="instructor">Instructor: Alice Green</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 90%;"></div>
+                        </div>
+                        <p class="progress-text">90% Completed</p>
+                        <a href="course-detail.html" class="btn">Continue</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.KiRek5MG_4xp0c-rWVF7rwFNC7?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Graphic Design Fundamentals</h3>
+                        <p class="instructor">Instructor: Bob White</p>
+                        <div class="progress-bar">
+                            <div class="progress-bar-fill" style="width: 20%;"></div>
+                        </div>
+                        <p class="progress-text">20% Completed</p>
+                        <a href="course-detail.html" class="btn">Continue</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+
+        <section class="recommended-courses">
+            <h2 class="section-title">Recommended for You</h2>
+            <div class="course-list">
+                <div class="course-card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.YykRpgL2sxnrmYFKRcg-JwHaD4?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>UI/UX Design Masterclass</h3>
+                        <p class="instructor">Instructor: Alice Johnson</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.8 (1,200)
+                        </div>
+                        <p class="price">$49.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.FVjURKeH0vq3qNtPdqu4EQHaEK?w=800&h=450&rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Digital Marketing Fundamentals</h3>
+                        <p class="instructor">Instructor: Bob Williams</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.5 (850)
+                        </div>
+                        <p class="price">Free</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.aUQjVEpjgXSbqC9V0wCFtAHaEK?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Advanced JavaScript Concepts</h3>
+                        <p class="instructor">Instructor: Charles Davis</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (1,500)
+                        </div>
+                        <p class="price">$59.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 LearnFlow. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

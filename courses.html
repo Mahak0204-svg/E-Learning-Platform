@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LearnFlow</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="#">My Learning</a>
+            <a href="#">Community</a>
+            <a href="#">About Us</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+            </div>
+            <div class="icons">
+                <i class="fas fa-bell"></i>
+            </div>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/large_2x/user-icon-on-transparent-background-free-png.png" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main class="container courses-page-content">
+        <aside class="sidebar-filters">
+            <h3>Filters</h3>
+
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <label><input type="checkbox" name="category" value="programming"> Programming</label>
+                <label><input type="checkbox" name="category" value="design"> Design</label>
+                <label><input type="checkbox" name="category" value="marketing"> Marketing</label>
+                <label><input type="checkbox" name="category" value="business"> Business</label>
+                </div>
+
+            <div class="filter-group">
+                <h4>Level</h4>
+                <label><input type="radio" name="level" value="all" checked> All Levels</label>
+                <label><input type="radio" name="level" value="beginner"> Beginner</label>
+                <label><input type="radio" name="level" value="intermediate"> Intermediate</label>
+                <label><input type="radio" name="level" value="advanced"> Advanced</label>
+            </div>
+
+            <div class="filter-group">
+                <h4>Price</h4>
+                <label><input type="checkbox" name="price" value="free"> Free</label>
+                <label><input type="checkbox" name="price" value="paid"> Paid</label>
+                </div>
+
+            <div class="filter-group">
+                <h4>Rating</h4>
+                <label><input type="radio" name="rating" value="4.5" checked><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.5 & Up</label>
+                <label><input type="radio" name="rating" value="4.0"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i> 4.0 & Up</label>
+                <label><input type="radio" name="rating" value="3.5"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i> 3.5 & Up</label>
+                <label><input type="radio" name="rating" value="0"> Any Rating</label>
+            </div>
+        </aside>
+
+        <section class="course-grid-section">
+            <div class="course-grid-header">
+                <span>Showing <span id="courseCount"></span> Courses</span>
+                <div class="sort-by">
+                    Sort By:
+                    <select>
+                        <option value="popularity">Popularity</option>
+                        <option value="newest">Newest</option> <option value="price-low-high">Price: Low to High</option>
+                        <option value="price-high-low">Price: High to Low</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="courses-grid" id="coursesGrid">
+                <div class="course-card" data-category="programming" data-level="advanced" data-price="paid" data-rating="4.7">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.JF5LAyPzzwgiCe_AjKH7IgHaD4?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Python for Data Science</h3>
+                        <p class="instructor">Instructor: Dr. Python</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.7 (2,100)
+                        </div>
+                        <p class="price">$39.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="design" data-level="beginner" data-price="paid" data-rating="4.6">
+                    <img src="https://citykittydesign.com/wp-content/uploads/2017/07/fundamentals-graphic-designer.jpg" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Fundamentals of Graphic Design</h3>
+                        <p class="instructor">Instructor: Art Master</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.6 (980)
+                        </div>
+                        <p class="price">$24.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="programming" data-level="advanced" data-price="paid" data-rating="4.9">
+                    <img src="https://icttube.com/wp-content/uploads/2021/08/Learn-Ethical-Hacking-From-A-Z-800x440.jpg" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Ethical Hacking A-Z</h3>
+                        <p class="instructor">Instructor: Cyber Pro</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.9 (3,500)
+                        </div>
+                        <p class="price">$69.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="marketing" data-level="beginner" data-price="free" data-rating="4.4">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Hf84Wk6LiToj3FEN-3ySxAHaDt?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Effective Content Writing</h3>
+                        <p class="instructor">Instructor: Wordsmith</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.4 (620)
+                        </div>
+                        <p class="price">Free</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="programming" data-level="intermediate" data-price="paid" data-rating="4.5">
+                    <img src="https://i.morioh.com/2023/11/20/b87ebde8.webp" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>JavaScript for Beginners</h3>
+                        <p class="instructor">Instructor: Code Master</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.5 (1800)
+                        </div>
+                        <p class="price">$29.99</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="business" data-level="intermediate" data-price="paid" data-rating="4.3">
+                    <img src="https://www.onethreadapp.com/blog/wp-content/uploads/2023/08/Essential-Project-Management-Skills-A-Comprehensive-Guide.png" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Project Management Essentials</h3>
+                        <p class="instructor">Instructor: Project Guru</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.3 (700)
+                        </div>
+                        <p class="price">$45.00</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="design" data-level="advanced" data-price="paid" data-rating="4.7">
+                    <img src="https://limeup.io/wp-content/uploads/2023/05/ux-research-methods.webp" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>Advanced UX Research Methods</h3>
+                        <p class="instructor">Instructor: UX Expert</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.7 (500)
+                        </div>
+                        <p class="price">$75.00</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+                <div class="course-card" data-category="marketing" data-level="intermediate" data-price="free" data-rating="4.1">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.ilNsz19O-8xGrusGOX0q1QHaE8?rs=1&pid=ImgDetMain" alt="Course Thumbnail">
+                    <div class="course-card-content">
+                        <h3>SEO Fundamentals</h3>
+                        <p class="instructor">Instructor: SEO Pro</p>
+                        <div class="rating">
+                            <i class="fas fa-star"></i> 4.1 (1200)
+                        </div>
+                        <p class="price">Free</p>
+                        <a href="course-detail.html" class="btn">Enroll Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <a href="#">Previous</a>
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">Next</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 LearnFlow. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LearnFlow - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">LearnFlow</div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="#">My Learning</a>
+            <a href="#">Community</a>
+            <a href="#">About Us</a>
+        </nav>
+        <div class="nav-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+            </div>
+            <div class="icons">
+                <i class="fas fa-bell"></i>
+            </div>
+            <img src="https://static.vecteezy.com/system/resources/previews/019/879/186/large_2x/user-icon-on-transparent-background-free-png.png" alt="User Avatar" class="user-avatar">
+        </div>
+    </header>
+
+    <main>
+        <section class="course-hero-section">
+            <div class="container">
+                <h1>The Complete 2025 Web Development Bootcamp</h1>
+                <p class="short-description">Master web development with HTML, CSS, JavaScript, Node.js, and more! Build 10+ real-world projects.</p>
+                <div class="meta-info">
+                    Instructor: Jane Doe   |   <i class="fas fa-star" style="color: #ffc107;"></i> 4.8 (15,450 ratings)   |   120,000+ Students
+                </div>
+                <button class="enroll-button">Enroll Now - $99.99</button>
+                </div>
+        </section>
+
+        <section class="container course-content-layout">
+            <div class="main-course-area">
+                <div class="video-player-container">
+                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ?si=Rj3kGv2P-g-8-2-y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+
+                <div class="course-tabs">
+                    <button class="course-tab-button active" data-tab="about">About This Course</button>
+                    <button class="course-tab-button" data-tab="curriculum">Curriculum</button>
+                    <button class="course-tab-button" data-tab="reviews">Reviews</button>
+                </div>
+
+                <div id="about" class="tab-content">
+                    <h3>What you'll learn</h3>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Build responsive websites with HTML5 and CSS3</li>
+                        <li><i class="fas fa-check-circle"></i> Develop interactive web applications with JavaScript</li>
+                        <li><i class="fas fa-check-circle"></i> Understand server-side development with Node.js and Express</li>
+                        <li><i class="fas fa-check-circle"></i> Manage databases with MongoDB</li>
+                        <li><i class="fas fa-check-circle"></i> Deploy your web applications to the cloud</li>
+                    </ul>
+
+                    <h3>Requirements</h3>
+                    <ul>
+                        <li><i class="fas fa-caret-right"></i> A computer with internet access</li>
+                        <li><i class="fas fa-caret-right"></i> No prior programming experience needed</li>
+                    </ul>
+
+                    <h3>Description</h3>
+                    <p>This course is designed for anyone who wants to learn web development from scratch. Whether you're a complete beginner or have some experience, this comprehensive bootcamp will take you from zero to a highly skilled web developer. You'll build numerous real-world projects, solidifying your understanding and preparing you for a career in tech.</p>
+                </div>
+
+                <div id="curriculum" class="tab-content" style="display: none;">
+                    <h3>Course Curriculum</h3>
+                    <ul class="curriculum-list">
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> Introduction to Web Development (1 module)
+                            <span class="lesson-duration">2h 30m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> HTML Fundamentals (2 modules)
+                            <span class="lesson-duration">4h 15m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> CSS Styling & Layouts (3 modules)
+                            <span class="lesson-duration">6h 00m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> JavaScript Basics (4 modules)
+                            <span class="lesson-duration">8h 45m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> Frontend Frameworks (React) (3 modules)
+                            <span class="lesson-duration">10h 20m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> Backend with Node.js & Express (4 modules)
+                            <span class="lesson-duration">9h 50m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> Databases (MongoDB) (2 modules)
+                            <span class="lesson-duration">5h 30m</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-folder-open lesson-icon"></i> Deployment & Best Practices (1 module)
+                            <span class="lesson-duration">3h 00m</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div id="reviews" class="tab-content" style="display: none;">
+                    <h3>Student Reviews</h3>
+                    <div class="overall-rating">
+                        4.8 <i class="fas fa-star"></i>
+                    </div>
+                    <p style="text-align: center; margin-bottom: 25px; color: #555;">(Based on 15,450 ratings)</p>
+
+                    <div class="rating-breakdown">
+                        <div>
+                            5 Stars <div class="bar"><div class="bar-fill" style="width: 85%;"></div></div> 85%
+                        </div>
+                        <div>
+                            4 Stars <div class="bar"><div class="bar-fill" style="width: 10%;"></div></div> 10%
+                        </div>
+                        <div>
+                            3 Stars <div class="bar"><div class="bar-fill" style="width: 3%;"></div></div> 3%
+                        </div>
+                        <div>
+                            2 Stars <div class="bar"><div class="bar-fill" style="width: 1.5%;"></div></div> 1.5%
+                        </div>
+                        <div>
+                            1 Star <div class="bar"><div class="bar-fill" style="width: 0.5%;"></div></div> 0.5%
+                        </div>
+                    </div>
+
+                    <div class="reviews-list">
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="https://via.placeholder.com/50" alt="Reviewer Avatar">
+                                <div>
+                                    <div class="reviewer-name">Sarah L.</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>This course is absolutely fantastic! The instructor explains complex topics clearly, and the projects are super helpful. Highly recommend for anyone serious about web dev.</p>
+                        </div>
+                        <div class="review-item">
+                            <div class="reviewer-info">
+                                <img src="https://via.placeholder.com/50" alt="Reviewer Avatar">
+                                <div>
+                                    <div class="reviewer-name">Michael P.</div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <p>Great content, but sometimes the pace felt a bit fast. Overall, a very valuable course and I learned a ton.</p>
+                        </div>
+                        </div>
+                </div>
+            </div>
+
+            <aside class="sidebar-course-details">
+                <h3>Course Features</h3>
+                <div class="detail-item">
+                    <i class="fas fa-language"></i> Language: English
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-clock"></i> Duration: 55.5 Hours
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-certificate"></i> Certificate of Completion
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-question-circle"></i> 20 Quizzes
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-download"></i> Downloadable Resources
+                </div>
+                <div class="detail-item">
+                    <i class="fas fa-mobile-alt"></i> Access on Mobile & TV
+                </div>
+
+                <div class="instructor-profile">
+                    <img src="https://via.placeholder.com/100" alt="Instructor Photo">
+                    <h4>Jane Doe</h4>
+                    <p>Experienced full-stack developer and passionate educator with 10+ years in the industry.</p>
+                    <a href="#" class="btn">View Instructor Profile</a>
+                </div>
+            </aside>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 LearnFlow. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+        <div class="social-icons">
+            <i class="fab fa-facebook-f"></i>
+            <i class="fab fa-twitter"></i>
+            <i class="fab fa-linkedin-in"></i>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,3 +1,5 @@
+![image alt](https://github.com/Mahak0204-svg/E-Learning-Platform/blob/8e631b2dbd103d9761836bb1926e5d73df3a27dd/img.png)
+
 # LearnFlow - Your E-Learning Platform
 
 Welcome to **LearnFlow**, a modern and responsive E-Learning Platform designed to provide an engaging and intuitive learning experience. This project features a clean user interface, a course listing page with client-side filtering, and detailed course pages.
@@ -68,6 +70,6 @@ E-Learning-Platform/
 
 ├── script.js            # Interactivity (filters, tabs)
 
-├── images/              # (Optional) Logos, avatars, thumbnails
+├── img              # (Optional) Logos, avatars, thumbnails
 
 └── README.md            # This file
